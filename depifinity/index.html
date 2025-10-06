@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta esenciales -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Depifinity - Depilación láser profesional. Inicio." />
+    <title>Depifinity - Inicio</title>
+
+    <!-- Google Font (Poppins) - coincide con style.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.0.2 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado (ruta relativa) -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- NAVBAR: aria-label y toggler con SVG para visibilidad -->
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+      <div class="container">
+        <!-- Marca: enlace relativo a la página de inicio -->
+        <a class="navbar-brand" href="index.html">Depifinity</a>
+
+        <!-- Botón toggler
+             data-bs-toggle/data-bs-target: esenciales para collapse de Bootstrap
+             aria-controls/aria-expanded/aria-label: accesibilidad
+        -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+          <!-- SVG inline: garantiza visibilidad sobre fondo rosa -->
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 6h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3 12h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <!-- Collapse: id coincidente con el data-bs-target anterior -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- href relativos: útiles para trabajar localmente en VS Code -->
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+            <li class="nav-item"><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO: background inline con imagen temática de depilación láser (Unsplash) -->
+    <section class="hero" style="background-image: url('https://source.unsplash.com/1600x900/?laser-hair-removal,clinic');">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Belleza sin límites</h1>
+        <p class="lead">Descubrí la suavidad perfecta con Depifinity</p>
+        <a href="promociones.html" class="btn btn-light btn-lg">Ver Promociones</a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS: grid responsive (col-12 en móvil, col-md-4 en desktop) -->
+    <main class="container py-5">
+      <h2 class="text-center mb-4">Nuestros Tratamientos</h2>
+
+      <div class="row g-4">
+        <!-- Card 1: depilación facial -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <!-- Imagen desde Unsplash, query para relevancia. loading lazy para performance -->
+            <img src="https://source.unsplash.com/800x600/?laser-hair-removal,face" class="card-img-top" alt="Depilación facial" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Depilación Facial</h5>
+              <p class="card-text">Tratamientos precisos para eliminar el vello facial sin irritaciones.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: piernas completas -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/800x600/?laser-hair-removal,legs" class="card-img-top" alt="Piernas completas" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Piernas Completas</h5>
+              <p class="card-text">Resultados duraderos para piernas suaves.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: axilas -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/800x600/?laser-hair-removal,underarm" class="card-img-top" alt="Axilas sin irritación" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Axilas</h5>
+              <p class="card-text">Sesiones efectivas sin irritación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer: simple y consistente -->
+    <footer>
+      <p>© 2025 Depifinity. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS bundle (Popper incluido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

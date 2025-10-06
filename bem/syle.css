@@ -1,0 +1,12 @@
+/* Modificador del bloque */
+.profile-card--featured {
+  border-color: gold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modificador del elemento */
+.profile-card__button--disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

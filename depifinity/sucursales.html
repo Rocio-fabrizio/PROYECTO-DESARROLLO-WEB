@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sucursales Depifinity - ubicaciones" />
+    <title>Sucursales - Depifinity</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Depifinity</a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M3 12h18" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="sucursales.html">Sucursales</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <h1 class="text-center mb-4">Nuestras Sucursales</h1>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="card h-100">
+            <!-- Imagen de clínica/fachada (Unsplash query) -->
+            <img src="https://source.unsplash.com/800x600/?clinic,medical,building" class="card-img-top" alt="Sucursal Palermo" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Palermo</h5>
+              <p class="card-text">Av. Santa Fe 3400, CABA</p>
+              <!-- enlace a Google Maps con query, target _blank y rel para seguridad -->
+              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Santa+Fe+3400" target="_blank" rel="noopener" class="btn btn-primary">Ver en mapa</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card h-100">
+            <img src="https://source.unsplash.com/800x600/?clinic,interior,medical" class="card-img-top" alt="Sucursal Belgrano" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Belgrano</h5>
+              <p class="card-text">Cabildo 2200, CABA</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Cabildo+2200" target="_blank" rel="noopener" class="btn btn-primary">Ver en mapa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Depifinity. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

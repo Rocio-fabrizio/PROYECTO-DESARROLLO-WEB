@@ -1,0 +1,80 @@
+
+/* página de incio */
+.titulo {
+    color: palevioletred;
+    background-color:grey;
+    height: 50px;
+    width: 150px;
+    margin-top: 50px;
+    border:3px solid black;
+    align-items: center;
+    
+   
+
+}
+
+.Subtitulo {
+    color: palevioletred;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.elegirnos {
+    
+    filter: drop-shadow(8px 8px 4px 
+    #FAEA10);
+
+}
+
+.lista {
+    color: blueviolet;
+}
+
+.opcion {
+    box-shadow: 3px 3px 3cap #FAEA10;
+    border-radius: 60px;
+}
+
+/* depilacion laser */
+ 
+ .sesiones {
+color: palevioletred;
+background-color: papayawhip;
+border-radius: 60px;
+ }
+ .texto {
+    color: blue;
+ }
+
+ /* quienes somos */
+
+ .comprometidos {
+    color: blueviolet;
+    background-color: beige;
+    border-radius: 70px;
+ }
+
+ .tipos {
+    color: blue;
+ }
+
+ /* centros */
+ 
+ .centros {
+    color: black;
+    background-color: grey;
+ }
+ .depi {
+    color: palevioletred;
+ }
+
+ /* promociones */
+
+ .pack {
+    background-color: grey;
+    border-radius: 50px;
+ }
+
+ .cuotas {
+    color: blue;
+ }
